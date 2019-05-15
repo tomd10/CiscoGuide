@@ -6,9 +6,12 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="{Binding Napoveda}" 
+           HorizontalOptions="Center"/>
+        <Button Text="Nápověda" Command="{Binding NapovedaCommand}"></Button>
+        <Button Text="Nastavení interface" Command="{Binding InterfaceCommand}"></Button>
+        <Button Text="Nastavení DHCP" Command="{Binding DHCPCommand}"></Button>
+        <Button Text="Nastavení Telnet" Command="{Binding TelnetCommand}"></Button>
     </StackLayout>
 
 </ContentPage>

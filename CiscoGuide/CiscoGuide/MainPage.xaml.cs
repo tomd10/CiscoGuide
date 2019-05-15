@@ -9,8 +9,10 @@ namespace CiscoGuide
 {
     public partial class MainPage : ContentPage
     {
+        public static DataBinding db = new DataBinding();
         public MainPage()
         {
+            BindingContext = db;
             InitializeComponent();
         }
     }
