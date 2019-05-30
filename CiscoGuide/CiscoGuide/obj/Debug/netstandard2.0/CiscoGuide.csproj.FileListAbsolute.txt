@@ -10,3 +10,4 @@ C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\CiscoGuide.dll
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\CiscoGuide.pdb
+C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\Interface.xaml.g.cs

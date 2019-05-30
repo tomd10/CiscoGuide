@@ -42,6 +42,7 @@ namespace CiscoGuide
          */ 
          void zobrazitNapovedu()
         {
+            App.Current.MainPage = new Interface();
             Napoveda = "Jina napoveda";
         }
 
