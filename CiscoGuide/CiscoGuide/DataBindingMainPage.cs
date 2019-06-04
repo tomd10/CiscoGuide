@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace CiscoGuide
 {
-    public class DataBinding : INotifyPropertyChanged
+    public class DataBindingMainPage : INotifyPropertyChanged
     {
         /*
          * Vzorová implementace rozhraní INotifyPropertyChanged
@@ -29,13 +29,20 @@ namespace CiscoGuide
         public ICommand InterfaceCommand { get; set; }
         public ICommand DHCPCommand { get; set; }
         public ICommand TelnetCommand { get; set; }
+        public ICommand ZabezpeceniCommand { get; set; }
+        public ICommand PPPoECommand { get; set; }
+        public ICommand DalsiCommand { get; set; }
+
         //Inicializace commandů
-        public DataBinding()
+        public DataBindingMainPage()
         {
             NapovedaCommand = new Command(zobrazitNapovedu);
             InterfaceCommand = new Command(zobrazitInterface);
             DHCPCommand = new Command(zobrazitDHCP);
             TelnetCommand = new Command(zobrazitTelnet);
+            ZabezpeceniCommand = new Command(zobrazitZabezpeceni);
+            PPPoECommand = new Command(zobrazitPPPoE);
+            DalsiCommand = new Command(zobrazitDalsi);
         }
         /*
          * Databinding commandů
@@ -48,22 +55,40 @@ namespace CiscoGuide
 
         void zobrazitInterface()
         {
-            Napoveda = "interface";
+            App.Current.MainPage = new Interface();
         }
 
         void zobrazitDHCP()
         {
-            Napoveda = "DHCP";
+            App.Current.MainPage = new DHCP();
         }
 
         void zobrazitTelnet()
         {
-            Napoveda = "Telnet";
+            App.Current.MainPage = new Telnet();
         }
+
+        void zobrazitZabezpeceni()
+        {
+            App.Current.MainPage = new Zabezpeceni();
+        }
+
+        void zobrazitPPPoE()
+        {
+
+        }
+
+        void zobrazitDalsi()
+        {
+
+        }
+
+
+
         /*
          * Databinding vlastností
          */ 
-        private string _Napoveda = "Toto je napoveda";
+        private string _Napoveda = "Cisco Guide Chabada";
         public string Napoveda
         {
             get { return _Napoveda; }

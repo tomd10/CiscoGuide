@@ -12,7 +12,7 @@ namespace CiscoGuide
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Interface : ContentPage
 	{
-        DataBinding2 db2 = new DataBinding2();
+        DataBindingInterface db2 = new DataBindingInterface();
 		public Interface ()
 		{
             BindingContext = db2;

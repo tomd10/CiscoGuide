@@ -14,7 +14,7 @@ namespace CiscoGuide
 	{
 		public DHCP ()
 		{
-            BindingContext = new DataBinding3();
+            BindingContext = new DataBindingDHCP();
 			InitializeComponent ();
 		}
 	}

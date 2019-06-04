@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace CiscoGuide
 {
-    public class DataBinding3 : INotifyPropertyChanged
+    public class DataBindingInterface : INotifyPropertyChanged
     {
         /*
          * Vzorová implementace rozhraní INotifyPropertyChanged
@@ -29,7 +29,7 @@ namespace CiscoGuide
         public ICommand VratitCommand { get; set; }
 
         //Inicializace commandů
-        public DataBinding3()
+        public DataBindingInterface()
         {
             UlozitCommand = new Command(ulozit);
             VratitCommand = new Command(vratit);
@@ -39,13 +39,25 @@ namespace CiscoGuide
          */
         void ulozit()
         {
-            Nazev = IPAdd;
+            string prikaz = "";
+            prikaz += "end \r\n";
+            prikaz += "conf t \r\n";
+            prikaz += ("interface " + Nazev + "\r\n");
+            prikaz += ("ip address " + IPAdd + "\r\n");
+            prikaz += ("description " + Popisek + "\r\n");
+            if (Povolit) { prikaz += "no "; } //Povolení if., je-li požadováno
+            prikaz += ("shutdown" + "\r\n");
+            prikaz += "end";
+
+            App.Current.MainPage = new Zobrazeni(prikaz);
         }
 
+        //Command návratu na hlavní obrazovku
         void vratit()
         {
-
+            App.Current.MainPage = new MainPage();
         }
+
         /*
          * Databinding vlastností
          */
@@ -63,11 +75,18 @@ namespace CiscoGuide
             set { _IPAdd = value; NotifyPropertyChanged("IPAdd"); }
         }
 
-        private string _Smerovac = "";
-        public string Smerovac
+        private string _Popisek = "";
+        public string Popisek
         {
-            get { return _Smerovac; }
-            set { _Smerovac = value; NotifyPropertyChanged("Popisek"); }
+            get { return _Popisek; }
+            set { _Popisek = value; NotifyPropertyChanged("Popisek"); }
+        }
+
+        private bool _Povolit = true;
+        public bool Povolit
+        {
+            get { return _Povolit; }
+            set { _Povolit = value; NotifyPropertyChanged("Povolit"); }
         }
     }
 }

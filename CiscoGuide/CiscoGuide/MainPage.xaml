@@ -6,12 +6,14 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="{Binding Napoveda}" 
-           HorizontalOptions="Center"/>
-        <Button Text="Nápověda" Command="{Binding NapovedaCommand}"></Button>
+        <Label Text="{Binding Napoveda}" HorizontalOptions="Center"/>
+        <Button Text="Nápověda" BackgroundColor="LightGreen" Command="{Binding NapovedaCommand}"></Button>
         <Button Text="Nastavení interface" Command="{Binding InterfaceCommand}"></Button>
         <Button Text="Nastavení DHCP" Command="{Binding DHCPCommand}"></Button>
         <Button Text="Nastavení Telnet" Command="{Binding TelnetCommand}"></Button>
+        <Button Text="Nastavení zabezpečení" Command="{Binding ZabezpeceniCommand}"></Button>
+        <Button Text="Nastavení PPPoE" Command="{Binding PPPoECommand}"></Button>
+        <Button Text="Další..." BackgroundColor="LightGreen" Command="{Binding DalsiCommand}"></Button>
     </StackLayout>
 
 </ContentPage>

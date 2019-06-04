@@ -11,6 +11,8 @@
             <Entry Text="{Binding IPAdd, Mode=TwoWay}"/>
             <Label Text="Adresa směrovače"/>
             <Entry Text="{Binding Smerovac, Mode=TwoWay}"/>
+            <Label Text="Adresa DNS"/>
+            <Entry Text="{Binding DNS, Mode=TwoWay}"/>
 
             <Button Text="Ulozit" Command="{Binding UlozitCommand}"/>
             <Button Text="Vratit" Command="{Binding VratitCommand}"/>

@@ -3,6 +3,8 @@ C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\bin\Debug\netstandard2.
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\bin\Debug\netstandard2.0\CiscoGuide.pdb
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\CiscoGuide.csprojAssemblyReference.cache
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\DHCP.xaml.g.cs
+C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\Interface.xaml.g.cs
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\CiscoGuide.csproj.CoreCompileInputs.cache
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\CiscoGuide.AssemblyInfoInputs.cache
@@ -10,4 +12,7 @@ C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\CiscoGuide.dll
 C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\CiscoGuide.pdb
-C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\Interface.xaml.g.cs
+C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\MainPage2.xaml.g.cs
+C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\Zobrazeni.xaml.g.cs
+C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\Telnet.xaml.g.cs
+C:\Users\TomCha\Desktop\CiscoGuide\CiscoGuide\CiscoGuide\obj\Debug\netstandard2.0\Zabezpeceni.xaml.g.cs
