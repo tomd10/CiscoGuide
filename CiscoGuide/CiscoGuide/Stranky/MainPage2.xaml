@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CiscoGuide.MainPage2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Napoveda}" HorizontalOptions="Center"/>
+            <Button Text="Nápověda" BackgroundColor="LightGreen" Command="{Binding NapovedaCommand}"></Button>
+            <Button Text="Nastavení maškarády" Command="{Binding MaskaradaCommand}"></Button>
+            <Button Text="Nastavení SVI" Command="{Binding SVICommand}"></Button>
+            <Button Text="Nastavení Telnet" Command="{Binding TelnetCommand}"></Button>
+            <Button Text="Nastavení zabezpečení" Command="{Binding ZabezpeceniCommand}"></Button>
+            <Button Text="Nastavení PPPoE" Command="{Binding PPPoECommand}"></Button>
+            <Button Text="Předchozí..." BackgroundColor="LightGreen" Command="{Binding PredchoziCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

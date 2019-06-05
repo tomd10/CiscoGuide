@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CiscoGuide.Stranky.Maskarada">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nastavení NAT-PAT" />
+            <Label Text="Adresa vn. s reverzní maskou:" />
+            <Entry Text="{Binding AdresaSMaskou, Mode=TwoWay}" />
+            <Label Text="Název odchozího rozhraní:"/>
+            <Entry Text="{Binding OdchoziInterface, Mode=TwoWay}"/>
+            <Label Text="Číslo standart ACLu:"/>
+            <Entry Text="{Binding CisloACL, Mode=TwoWay}"/>
+
+            <Button Text="Ulozit" Command="{Binding UlozitCommand}"/>
+            <Button Text="Vratit" Command="{Binding VratitCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

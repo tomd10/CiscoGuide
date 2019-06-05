@@ -14,22 +14,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="DHCP.xaml">
+    <EmbeddedResource Update="Stranky\DHCP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Interface.xaml">
+    <EmbeddedResource Update="Stranky\Interface.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MainPage2.xaml">
+    <EmbeddedResource Update="Stranky\MainPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Telnet.xaml">
+    <EmbeddedResource Update="Stranky\Maskarada.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Zabezpeceni.xaml">
+    <EmbeddedResource Update="Stranky\PPPoE.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Zobrazeni.xaml">
+    <EmbeddedResource Update="Stranky\SVI.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Stranky\Telnet.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Stranky\Zabezpeceni.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Stranky\Zobrazeni.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
