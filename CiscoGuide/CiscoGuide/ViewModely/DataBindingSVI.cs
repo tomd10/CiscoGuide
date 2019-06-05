@@ -27,10 +27,11 @@ namespace CiscoGuide
             string prikaz = "";
             prikaz += "end \r\n";
             prikaz += "conf t \r\n";
-            prikaz += "ip dhcp pool " + Nazev + "\r\n";
-            prikaz += "network" + IPAdd + "\r\n";
-            prikaz += "default-router " + Smerovac + "\r\n";
-            prikaz += "name-server " + DNS + "\r\n";
+            prikaz += "interface vlan " + CisloVLAN + "\r\n";
+            prikaz += "ip address " + IPAdd + "\r\n";
+            prikaz += "exit \r\n";
+            prikaz += "interface range " + PrvniIf + "-" + CisloPoslednihoIf +  "\r\n";
+            prikaz += "switchport access vlan " + CisloVLAN + "\r\n";
             prikaz += "end";
 
             App.Current.MainPage = new Zobrazeni(prikaz);

@@ -15,6 +15,7 @@ namespace CiscoGuide.Stranky
 		public SVI ()
 		{
 			InitializeComponent ();
+            BindingContext = new DataBindingSVI();
 		}
 	}
 }

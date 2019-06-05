@@ -4,9 +4,18 @@
              x:Class="CiscoGuide.Stranky.SVI">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Nastavení SVI-VLAN" />
+            <Label Text="Číslo VLAN:" />
+            <Entry Text="{Binding CisloVLAN, Mode=TwoWay}" />
+            <Label Text="IP adresa + maska VLAN:"/>
+            <Entry Text="{Binding IPAdd, Mode=TwoWay}"/>
+            <Label Text="Název prvního interfacu:"/>
+            <Entry Text="{Binding PrvniIf, Mode=TwoWay}"/>
+            <Label Text="Číslo posledního interfacu:"/>
+            <Entry Text="{Binding CisloPoslednihoIf, Mode=TwoWay}"/>
+
+            <Button Text="Ulozit" Command="{Binding UlozitCommand}"/>
+            <Button Text="Vratit" Command="{Binding VratitCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
