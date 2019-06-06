@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CiscoGuide.Stranky.Obnova">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Procedura obnovy hesla"/>
+            <Label Text="1) Připojíme se k přístroji konzolí"/>
+            <Label Text="2) Přístroj restartujeme a při bootování mačkáme klávesy Break, popř. Ctrl+Break (v PuTTY speciální příkaz)"/>
+            <Label Text="3) V ROMMON prompt menu nastavíme config register na 0x2142 (příkazy se liší, necháme si je vypsat nápovědou)"/>
+            <Label Text="4) Přístroj rebootujeme"/>
+            <Label Text="5) Přístroj najede bez startup-configu. Vlezeme do (config)# a změníme heslo"/>
+            <Label Text="6) zadáme (config)# config-register 0x2102   - důležité!!!"/>
+            <Label Text="7) Přístroj opět rebootujeme."/>
+
+            <Button Text="Vratit" Command="{Binding VratitCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

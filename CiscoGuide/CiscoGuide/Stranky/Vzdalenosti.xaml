@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CiscoGuide.Stranky.Vzdalenosti">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Administrativní vzdálenosti směrovacích protokolů (stručný výtah)"/>
+            <Label Text="Méně je lépe - priorita."/>
+
+            <Label Text="0 - Directly connected"/>
+            <Label Text="1 - Statická routa"/>
+            <Label Text="90 - EIGRP"/>
+            <Label Text="100 - IGRP"/>
+            <Label Text="110 - OSPF"/>
+            <Label Text="115 - ISIS"/>
+            <Label Text="120 - RIP"/>
+            <Label Text="140 - EGP"/>
+
+            <Button Text="Vratit" Command="{Binding VratitCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

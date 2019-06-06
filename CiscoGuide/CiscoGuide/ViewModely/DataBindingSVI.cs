@@ -29,6 +29,7 @@ namespace CiscoGuide
             prikaz += "conf t \r\n";
             prikaz += "interface vlan " + CisloVLAN + "\r\n";
             prikaz += "ip address " + IPAdd + "\r\n";
+            prikaz += "no sh \r\n";
             prikaz += "exit \r\n";
             prikaz += "interface range " + PrvniIf + "-" + CisloPoslednihoIf +  "\r\n";
             prikaz += "switchport access vlan " + CisloVLAN + "\r\n";

@@ -8,9 +8,9 @@
             <Button Text="Nápověda" BackgroundColor="LightGreen" Command="{Binding NapovedaCommand}"></Button>
             <Button Text="Nastavení maškarády" Command="{Binding MaskaradaCommand}"></Button>
             <Button Text="Nastavení SVI" Command="{Binding SVICommand}"></Button>
-            <Button Text="Nastavení Telnet" Command="{Binding TelnetCommand}"></Button>
-            <Button Text="Nastavení zabezpečení" Command="{Binding ZabezpeceniCommand}"></Button>
-            <Button Text="Nastavení PPPoE" Command="{Binding PPPoECommand}"></Button>
+            <Button Text="Procedura obnovy hesla" Command="{Binding ObnovaCommand}"></Button>
+            <Button Text="Příkaz Show" Command="{Binding ShowCommand}"></Button>
+            <Button Text="Administrativní vzdálenosti" Command="{Binding VzdalenostiCommand}"></Button>
             <Button Text="Předchozí..." BackgroundColor="LightGreen" Command="{Binding PredchoziCommand}"></Button>
         </StackLayout>
     </ContentPage.Content>

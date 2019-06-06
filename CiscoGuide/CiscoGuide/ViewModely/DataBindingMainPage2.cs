@@ -14,9 +14,9 @@ namespace CiscoGuide
         public ICommand NapovedaCommand { get; set; }
         public ICommand MaskaradaCommand { get; set; }
         public ICommand SVICommand { get; set; }
-        public ICommand TelnetCommand { get; set; }
-        public ICommand ZabezpeceniCommand { get; set; }
-        public ICommand PPPoECommand { get; set; }
+        public ICommand ObnovaCommand { get; set; }
+        public ICommand ShowCommand { get; set; }
+        public ICommand VzdalenostiCommand { get; set; }
         public ICommand PredchoziCommand { get; set; }
 
         //Inicializace commandů
@@ -25,9 +25,9 @@ namespace CiscoGuide
             NapovedaCommand = new Command(zobrazitNapovedu);
             MaskaradaCommand = new Command(zobrazitMaskarada);
             SVICommand = new Command(zobrazitSVI);
-            TelnetCommand = new Command(zobrazitTelnet);
-            ZabezpeceniCommand = new Command(zobrazitZabezpeceni);
-            PPPoECommand = new Command(zobrazitPPPoE);
+            ObnovaCommand = new Command(zobrazitObnova);
+            ShowCommand = new Command(zobrazitShow);
+            VzdalenostiCommand = new Command(zobrazitVzdalenosti);
             PredchoziCommand = new Command(zobrazitPredchozi);
         }
         /*
@@ -35,7 +35,7 @@ namespace CiscoGuide
          */ 
          void zobrazitNapovedu()
         {
-            Napoveda = "Jina napoveda";
+            App.Current.MainPage = new Napoveda();
         }
 
         void zobrazitMaskarada()
@@ -48,19 +48,19 @@ namespace CiscoGuide
             App.Current.MainPage = new SVI();
         }
 
-        void zobrazitTelnet()
+        void zobrazitObnova()
         {
-            App.Current.MainPage = new Telnet();
+            App.Current.MainPage = new Obnova();
         }
 
-        void zobrazitZabezpeceni()
+        void zobrazitShow()
         {
-            App.Current.MainPage = new Zabezpeceni();
+            App.Current.MainPage = new Show();
         }
 
-        void zobrazitPPPoE()
+        void zobrazitVzdalenosti()
         {
-            App.Current.MainPage = new PPPoE();
+            App.Current.MainPage = new Vzdalenosti();
         }
 
         void zobrazitPredchozi()

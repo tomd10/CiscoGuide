@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CiscoGuide.Stranky.Show">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nejdůležitější Show příkazy - privilegovaný režim"/>
+            
+            <Label Text="show running-config (aktuální RAM konfigurace)"/>
+            <Label Text="show ip int brief (stručný výpis IP adres + stavu intefaců)"/>
+            <Label Text="show interfaces /název if/ (podrobný výpis stavu interfacu)"/>
+            <Label Text="show ip route (výpis směrovací tabulky)"/>
+            <Label Text="show inventory (modelová řada přístroje)"/>
+            <Label Text="show version (verze iOS, license, conf. reg.)"/>
+            <Label Text="Všechny Show příkazy lze regexovat - | include begin exclude"/>
+            
+            <Button Text="Vratit" Command="{Binding VratitCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

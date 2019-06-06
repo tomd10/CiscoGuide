@@ -34,10 +34,9 @@ namespace CiscoGuide
          * Databinding commandů
          */ 
          void zobrazitNapovedu()
-        {
-            App.Current.MainPage = new Interface();
-            Napoveda = "Jina napoveda";
-        }
+         {
+            App.Current.MainPage = new Napoveda();
+         }
 
         void zobrazitInterface()
         {

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CiscoGuide.Stranky.Napoveda">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Vítejte v aplikaci Cisco Guide!"/>
+            <Label Text="Autor: Tomáš Chabada P3"/>
+            <Label Text="Jak pracovat? V hlavním menu navolit příslušnou kategorii, pak pokračovat zadáním parametrů. Po odeslání vyskočí okno s příkazy."/>
+            <Label Text="Při používání aplikace využijte mozek. Aplikace NEkontroluje masky, atd.!"/>
+
+            <Button Text="Vratit" Command="{Binding VratitCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
