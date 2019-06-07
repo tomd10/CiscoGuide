@@ -1,0 +1,5 @@
+Aplikace generuje soubor příkazů pro několik základních konfigurací Cisco strojů (směrovačů i přepínačů).
+Ovládání je zcela intuitivní - na hlavní straně navolíme kategorii, zadáme parametry a stiskneme Uložit. Objeví se tím nová stránka, na které se příkazy vypíší.
+Tlačítkem Vrátit se vždy vracíme na hlavní stranu.
+Nápovědu můžeme vyvolat z obou hlavních stran stisknutím tlačítka Nápověda.
+Některé stránky jsou jen statické.
